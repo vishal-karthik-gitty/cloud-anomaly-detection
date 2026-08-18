@@ -1,0 +1,129 @@
+cpu_utilization,network_bytes_out,failed_login_count,api_calls_per_min,login_hour,unique_ips_per_user,true_label,predicted_label,anomaly_score,anomaly_type,explanation,severity
+37.67380050154864,82.15384738219238,26,61.603168605148014,2,1,1,1,-0.0924938982267391,brute_force_login,26 failed logins during off-hours (2:00) -> possible brute-force login attempt,Medium
+26.364430473949724,54.68772749293342,0,260.6474947520649,21,11,1,1,-0.1461761017626852,credential_stuffing,261 API calls/min from 11 unique IPs -> possible credential-stuffing / bot activity,High
+96.94742155406075,21.22115864661045,0,10.855598599039888,8,3,1,1,-0.0889520649457208,crypto_mining,High CPU (96.9%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+47.73521830844124,70.35269004198332,22,43.26857022147436,3,1,1,1,-0.0408150898764865,brute_force_login,22 failed logins during off-hours (3:00) -> possible brute-force login attempt,Medium
+46.73116902876552,95.60040079794032,18,48.34948761199428,4,1,1,1,-0.0294253367082854,brute_force_login,18 failed logins during off-hours (4:00) -> possible brute-force login attempt,Medium
+31.877471951741448,86.25620747012967,19,41.36582287701787,3,1,1,1,-0.0035882518739437,brute_force_login,19 failed logins during off-hours (3:00) -> possible brute-force login attempt,Medium
+95.94888195136,70.58418370169862,1,15.129966031053304,23,1,1,1,-0.0727799530713647,crypto_mining,High CPU (95.9%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+35.199744247458284,50.35919573673892,36,19.46074043481004,1,1,1,1,-0.0572225528403707,brute_force_login,36 failed logins during off-hours (1:00) -> possible brute-force login attempt,Medium
+46.359618304279735,859.7481084838115,0,46.81608425968574,15,1,1,1,-0.0195199132063785,data_exfiltration,Abnormal outbound traffic (860 MB) with normal CPU -> possible data exfiltration,High
+34.41777152163696,59.54813057113501,38,6.4530013028352045,1,1,1,1,-0.0695728004821074,brute_force_login,38 failed logins during off-hours (1:00) -> possible brute-force login attempt,Medium
+20.284063236952303,40.32656212033493,0,196.6429758127623,21,19,1,1,-0.1783085396775442,credential_stuffing,197 API calls/min from 19 unique IPs -> possible credential-stuffing / bot activity,High
+27.37252591232823,820.8450156169023,0,14.764434585715083,2,3,1,1,-0.0540670233237775,data_exfiltration,Abnormal outbound traffic (821 MB) with normal CPU -> possible data exfiltration,High
+90.04324776520069,67.1308188852837,0,38.69727965945005,21,1,1,1,-0.0067248026801577,crypto_mining,High CPU (90.0%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+28.73626734340161,45.96438362167876,0,168.64415547340562,21,19,1,1,-0.1598483710332975,credential_stuffing,169 API calls/min from 19 unique IPs -> possible credential-stuffing / bot activity,High
+39.11676832788642,122.36250514104094,31,67.95782900325044,4,1,1,1,-0.1073772383778596,brute_force_login,31 failed logins during off-hours (4:00) -> possible brute-force login attempt,Medium
+91.48706505374386,53.14529095361732,0,19.84351864848644,0,4,1,1,-0.1081752766584969,crypto_mining,High CPU (91.5%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+46.71336758758402,548.2829597023691,0,39.28072864806565,10,1,1,1,-0.0090058868124822,data_exfiltration,Abnormal outbound traffic (548 MB) with normal CPU -> possible data exfiltration,High
+31.8042657327968,877.407931437368,0,45.45094371492854,15,1,1,1,-0.01120678110132,data_exfiltration,Abnormal outbound traffic (877 MB) with normal CPU -> possible data exfiltration,High
+15.583662427751898,660.1640425340333,0,10.198812413574135,1,1,1,1,-0.0537145115261835,data_exfiltration,Abnormal outbound traffic (660 MB) with normal CPU -> possible data exfiltration,High
+40.2280208690092,83.25079463184325,27,40.481109172973404,2,3,1,1,-0.0836257130725656,brute_force_login,27 failed logins during off-hours (2:00) -> possible brute-force login attempt,Medium
+16.74693466258754,52.28023666756669,34,32.1010632134752,1,1,1,1,-0.0939563036227416,brute_force_login,34 failed logins during off-hours (1:00) -> possible brute-force login attempt,Medium
+22.99708306146394,31.35692620905298,0,226.30099612627123,7,13,1,1,-0.1494125781919232,credential_stuffing,226 API calls/min from 13 unique IPs -> possible credential-stuffing / bot activity,High
+19.857054661502303,53.35992453351573,16,14.829415227250264,2,1,1,1,-0.0123877266676032,brute_force_login,16 failed logins during off-hours (2:00) -> possible brute-force login attempt,Medium
+97.99989603944248,78.76229721632909,1,45.19715937755282,15,1,1,1,-0.0331604404068459,crypto_mining,High CPU (98.0%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+95.14702493476422,25.16540959744876,0,17.747142284366376,5,1,1,1,-0.0473653946729542,crypto_mining,High CPU (95.1%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+36.55802795871858,101.06474422992429,19,37.38661904008431,3,1,1,1,-0.0018488316019009,brute_force_login,19 failed logins during off-hours (3:00) -> possible brute-force login attempt,Medium
+46.19106723681181,73.10387907405442,0,256.39562749950915,13,8,1,1,-0.1169773559601291,credential_stuffing,256 API calls/min from 8 unique IPs -> possible credential-stuffing / bot activity,High
+91.50560592280324,38.03266817835831,0,26.34467879594041,6,1,1,1,-0.0306585246435859,crypto_mining,High CPU (91.5%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+18.64472974976259,810.9907642446026,0,16.83380360166556,4,1,1,1,-0.029316017086913,data_exfiltration,Abnormal outbound traffic (811 MB) with normal CPU -> possible data exfiltration,High
+22.26676284385677,804.1759081849009,1,9.370906108905402,0,1,1,1,-0.0511715890070991,data_exfiltration,Abnormal outbound traffic (804 MB) with normal CPU -> possible data exfiltration,High
+26.79253915929449,93.86147193261183,1,224.0705889501935,17,9,1,1,-0.1416930466315824,credential_stuffing,224 API calls/min from 9 unique IPs -> possible credential-stuffing / bot activity,High
+33.336544927205026,96.54038069111569,1,246.0267277910798,11,18,1,1,-0.1771309468383833,credential_stuffing,246 API calls/min from 18 unique IPs -> possible credential-stuffing / bot activity,High
+25.26161467823472,21.12106681118772,34,23.374052369022067,1,1,1,1,-0.0815306793393702,brute_force_login,34 failed logins during off-hours (1:00) -> possible brute-force login attempt,Medium
+94.0148355019577,28.29675549858945,1,17.51976328214035,8,1,1,1,-0.0623950843086533,crypto_mining,High CPU (94.0%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+22.12744857086987,54.6708490654464,17,30.79792569620929,1,1,1,1,-0.0310998560020486,brute_force_login,17 failed logins during off-hours (1:00) -> possible brute-force login attempt,Medium
+93.49672947242352,37.53068156777165,1,38.04904883209801,8,1,1,1,-0.0386314612058457,crypto_mining,High CPU (93.5%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+96.26626486501364,42.87014873476717,0,22.030181493381,3,1,1,1,-0.0306864449480331,crypto_mining,High CPU (96.3%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+24.215196437638262,790.3025830034057,0,26.65535373262569,1,1,1,1,-0.0143637750283512,data_exfiltration,Abnormal outbound traffic (790 MB) with normal CPU -> possible data exfiltration,High
+32.34361806542734,50.95306932735225,36,15.355468507214242,1,2,1,1,-0.0530781752989857,brute_force_login,36 failed logins during off-hours (1:00) -> possible brute-force login attempt,Medium
+94.63447653391977,87.30328925450858,0,49.809145355438496,17,1,1,1,-0.0012960496950151,crypto_mining,High CPU (94.6%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+55.06933930950655,91.41788559052264,1,247.169722607078,11,18,1,1,-0.1948682952570954,credential_stuffing,247 API calls/min from 18 unique IPs -> possible credential-stuffing / bot activity,High
+13.7593521762723,49.73947988736353,0,265.1299763385249,2,11,1,1,-0.1642263681336377,credential_stuffing,265 API calls/min from 11 unique IPs -> possible credential-stuffing / bot activity,High
+31.58332114963863,41.74267609598556,18,43.64128427212411,1,1,1,1,-0.0371455313825268,brute_force_login,18 failed logins during off-hours (1:00) -> possible brute-force login attempt,Medium
+42.35018809606284,102.51915325267592,15,56.5819977001968,2,1,1,1,-0.0414781964509076,brute_force_login,15 failed logins during off-hours (2:00) -> possible brute-force login attempt,Medium
+43.184098738060285,670.0369602322999,1,46.34925996137446,11,2,1,1,-0.0437195051514709,data_exfiltration,Abnormal outbound traffic (670 MB) with normal CPU -> possible data exfiltration,High
+53.94803983511691,80.2198386480519,2,57.96280758003276,12,2,0,1,-0.0066763698593896,normal,Flagged by ML model but does not match a known attack signature -> recommend manual review (potential zero-day pattern),Low
+93.1954231215204,49.900941342749526,0,37.33960560489396,19,1,1,1,-0.0187540907979605,crypto_mining,High CPU (93.2%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+33.57949140204308,98.15249143047978,30,46.65681930960127,3,1,1,1,-0.0542477327177748,brute_force_login,30 failed logins during off-hours (3:00) -> possible brute-force login attempt,Medium
+24.81088892003137,684.3732971857856,1,23.568596804044017,19,1,1,1,-0.0318829356481776,data_exfiltration,Abnormal outbound traffic (684 MB) with normal CPU -> possible data exfiltration,High
+91.14569310943634,68.02125547680538,0,24.729587919757225,1,1,1,1,-0.0406219650515269,crypto_mining,High CPU (91.1%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+22.935411830426,37.81427967964942,22,7.584021310920367,4,3,1,1,-0.0547302729351693,brute_force_login,22 failed logins during off-hours (4:00) -> possible brute-force login attempt,Medium
+46.42648300241683,79.90398871095293,2,50.51409315860573,12,4,0,1,-0.0037035492931957,normal,Flagged by ML model but does not match a known attack signature -> recommend manual review (potential zero-day pattern),Low
+32.884449889147625,45.723567262574925,0,211.73876201861825,22,10,1,1,-0.1322019179153473,credential_stuffing,212 API calls/min from 10 unique IPs -> possible credential-stuffing / bot activity,High
+33.88678025759959,77.43634919787885,33,37.26952023933399,3,1,1,1,-0.0376269125968057,brute_force_login,33 failed logins during off-hours (3:00) -> possible brute-force login attempt,Medium
+42.555061951778974,650.9771488975225,0,41.76279364078461,9,3,1,1,-0.0402141539267809,data_exfiltration,Abnormal outbound traffic (651 MB) with normal CPU -> possible data exfiltration,High
+43.74115479295515,79.70785302047982,1,284.4098576688942,12,15,1,1,-0.1705920732538905,credential_stuffing,284 API calls/min from 15 unique IPs -> possible credential-stuffing / bot activity,High
+20.375118216315464,580.5967296612456,0,18.49217474678037,22,1,1,1,-0.0330260250392892,data_exfiltration,Abnormal outbound traffic (581 MB) with normal CPU -> possible data exfiltration,High
+26.22633418961786,33.72287685256501,0,192.9780346402677,2,17,1,1,-0.1607856055927016,credential_stuffing,193 API calls/min from 17 unique IPs -> possible credential-stuffing / bot activity,High
+95.84237411875895,44.13500837714542,0,19.96730321198445,7,2,1,1,-0.046701283707722,crypto_mining,High CPU (95.8%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+34.120550445946606,34.741319460697376,0,180.22151062070424,1,15,1,1,-0.1586598334808887,credential_stuffing,180 API calls/min from 15 unique IPs -> possible credential-stuffing / bot activity,High
+98.45383241229922,64.84398994385705,1,12.409643807359068,23,3,1,1,-0.1136533561356727,crypto_mining,High CPU (98.5%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+91.52671385368951,43.295336707909385,0,19.47341016228277,21,1,1,1,-0.0251177657328697,crypto_mining,High CPU (91.5%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+33.123234244992474,72.4781954100478,0,198.57527273390752,6,12,1,1,-0.1299909843405952,credential_stuffing,199 API calls/min from 12 unique IPs -> possible credential-stuffing / bot activity,High
+99.77192136569413,28.625432422768817,2,20.63777528752402,22,3,1,1,-0.1336827561042759,crypto_mining,High CPU (99.8%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+17.67493810017387,42.571773529928976,3,35.71313079164821,0,1,0,1,-0.0133058214873299,normal,Flagged by ML model but does not match a known attack signature -> recommend manual review (potential zero-day pattern),Low
+95.90792636680648,42.67589412954968,0,17.184367479151923,7,1,1,1,-0.0341279310293541,crypto_mining,High CPU (95.9%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+16.617290889322053,78.89518108581701,0,10.55357534682306,2,5,0,1,-0.0037966148041546,normal,Flagged by ML model but does not match a known attack signature -> recommend manual review (potential zero-day pattern),Low
+29.075438333187904,67.78692983921937,0,257.7227571088043,12,12,1,1,-0.1504297329706684,credential_stuffing,258 API calls/min from 12 unique IPs -> possible credential-stuffing / bot activity,High
+32.06525225953858,88.28186877094764,0,273.1618377624005,17,18,1,1,-0.1819598525014902,credential_stuffing,273 API calls/min from 18 unique IPs -> possible credential-stuffing / bot activity,High
+92.96292413061964,79.53135964150938,0,19.23316568907436,4,1,1,1,-0.0355922933058749,crypto_mining,High CPU (93.0%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+46.28390623972869,65.67696377623885,0,171.23551785595174,16,18,1,1,-0.1547774198654344,credential_stuffing,171 API calls/min from 18 unique IPs -> possible credential-stuffing / bot activity,High
+38.36553990037788,79.66033804795438,22,33.78656195196039,1,1,1,1,-0.0330215539801923,brute_force_login,22 failed logins during off-hours (1:00) -> possible brute-force login attempt,Medium
+25.35165350423076,891.4226690837894,0,16.364041533807665,20,1,1,1,-0.0434028095468904,data_exfiltration,Abnormal outbound traffic (891 MB) with normal CPU -> possible data exfiltration,High
+28.047947961475263,662.9180503021005,0,29.94804546470303,21,4,1,1,-0.0876826435697035,data_exfiltration,Abnormal outbound traffic (663 MB) with normal CPU -> possible data exfiltration,High
+49.20060220777796,108.8333684040418,2,40.41031677207808,12,3,0,1,-0.0077824284549544,normal,Flagged by ML model but does not match a known attack signature -> recommend manual review (potential zero-day pattern),Low
+30.41366304271988,685.9016948600477,0,10.28892034841315,20,5,1,1,-0.102954263801695,data_exfiltration,Abnormal outbound traffic (686 MB) with normal CPU -> possible data exfiltration,High
+41.83870517778004,82.33487446507611,1,261.6214207093019,10,10,1,1,-0.145412491945618,credential_stuffing,262 API calls/min from 10 unique IPs -> possible credential-stuffing / bot activity,High
+21.29934783088176,53.39473929347718,0,167.69966908216708,4,14,1,1,-0.1333387540996065,credential_stuffing,168 API calls/min from 14 unique IPs -> possible credential-stuffing / bot activity,High
+22.65010859546925,807.6918775101148,0,28.103196549870106,8,1,1,1,-0.0037138036491807,data_exfiltration,Abnormal outbound traffic (808 MB) with normal CPU -> possible data exfiltration,High
+94.84598316189656,69.67876810129523,0,44.828581804151305,11,2,1,1,-0.0267802744464139,crypto_mining,High CPU (94.8%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+20.93702973092733,47.74507439354435,1,161.38899596629307,5,11,1,1,-0.1218590468251827,credential_stuffing,161 API calls/min from 11 unique IPs -> possible credential-stuffing / bot activity,High
+34.179254437722136,61.88337766363405,0,247.2153010569304,15,10,1,1,-0.1130725113201652,credential_stuffing,247 API calls/min from 10 unique IPs -> possible credential-stuffing / bot activity,High
+12.91059260496035,797.6701183509532,0,12.137584485752278,7,1,1,1,-0.0525636574323211,data_exfiltration,Abnormal outbound traffic (798 MB) with normal CPU -> possible data exfiltration,High
+49.80058919380657,95.91200107708922,1,47.21831602491065,18,4,0,1,-0.0028273444120648,normal,Flagged by ML model but does not match a known attack signature -> recommend manual review (potential zero-day pattern),Low
+29.208339362857,44.231263344196805,0,243.6126969341162,22,10,1,1,-0.1357114101630032,credential_stuffing,244 API calls/min from 10 unique IPs -> possible credential-stuffing / bot activity,High
+30.229146316527604,48.94220670908872,31,21.921250007570816,4,1,1,1,-0.0354172884589901,brute_force_login,31 failed logins during off-hours (4:00) -> possible brute-force login attempt,Medium
+12.895967211265532,40.02338943471792,0,237.2054699815264,5,8,1,1,-0.1265581801380183,credential_stuffing,237 API calls/min from 8 unique IPs -> possible credential-stuffing / bot activity,High
+97.71462182742351,54.15491496678651,0,18.78741705452583,8,3,1,1,-0.0679548980927234,crypto_mining,High CPU (97.7%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+32.10510510143496,64.23006472965082,0,187.8038239350132,13,11,1,1,-0.1208462323526873,credential_stuffing,188 API calls/min from 11 unique IPs -> possible credential-stuffing / bot activity,High
+22.495417708063407,64.23885952779364,0,183.8406089852089,3,16,1,1,-0.1526941678846578,credential_stuffing,184 API calls/min from 16 unique IPs -> possible credential-stuffing / bot activity,High
+34.17005959275228,563.8560527500329,0,39.56273684556784,9,3,1,1,-0.0058484877705951,data_exfiltration,Abnormal outbound traffic (564 MB) with normal CPU -> possible data exfiltration,High
+27.08438491860857,571.8417406960018,0,14.42128839289148,5,3,1,1,-0.0361630223380005,data_exfiltration,Abnormal outbound traffic (572 MB) with normal CPU -> possible data exfiltration,High
+9.45374624713054,71.33634432928733,3,0.0,22,3,0,1,-0.0586567955889111,normal,Flagged by ML model but does not match a known attack signature -> recommend manual review (potential zero-day pattern),Low
+45.447773881762295,72.07323503149414,0,264.9400202836562,13,13,1,1,-0.1549015891056741,credential_stuffing,265 API calls/min from 13 unique IPs -> possible credential-stuffing / bot activity,High
+20.591540719163746,32.489045298985815,29,0.28412531114542,4,1,1,1,-0.0759450681717403,brute_force_login,29 failed logins during off-hours (4:00) -> possible brute-force login attempt,Medium
+90.57680001765968,107.2518985499356,0,46.72736236549034,12,1,1,1,-0.0059736368878094,crypto_mining,High CPU (90.6%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+99.80890078128816,41.14667050541548,0,18.167647701528693,23,1,1,1,-0.05585096060316,crypto_mining,High CPU (99.8%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+45.26695618743476,875.5563378439692,0,40.08715348966589,16,1,1,1,-0.021031920827052,data_exfiltration,Abnormal outbound traffic (876 MB) with normal CPU -> possible data exfiltration,High
+94.28506094690604,42.00948368667534,0,25.064179171962465,4,2,1,1,-0.0457610896078251,crypto_mining,High CPU (94.3%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+17.97445063715528,501.5255878426545,0,24.75968748476411,3,2,1,1,-0.0099561759395896,data_exfiltration,Abnormal outbound traffic (502 MB) with normal CPU -> possible data exfiltration,High
+25.74128617573349,35.87699119598385,20,24.073715705839785,3,3,1,1,-0.0218948319622623,brute_force_login,20 failed logins during off-hours (3:00) -> possible brute-force login attempt,Medium
+95.49332616270256,45.24974768054885,2,16.149552222592582,23,2,1,1,-0.1367606998639283,crypto_mining,High CPU (95.5%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+19.36919736555349,39.80049957601962,2,293.199012468419,5,8,1,1,-0.1470612343488323,credential_stuffing,293 API calls/min from 8 unique IPs -> possible credential-stuffing / bot activity,High
+40.16131503396719,92.0741386045602,22,28.407703250981047,4,3,1,1,-0.0542971215749809,brute_force_login,22 failed logins during off-hours (4:00) -> possible brute-force login attempt,Medium
+22.00077379296981,51.277938949561815,0,171.321337157679,7,13,1,1,-0.1394636415330616,credential_stuffing,171 API calls/min from 13 unique IPs -> possible credential-stuffing / bot activity,High
+90.08060370509284,48.69277411496862,0,34.48117613304076,22,2,1,1,-0.0332380787422936,crypto_mining,High CPU (90.1%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+92.7944567757218,48.15546580048446,0,21.706858291978232,19,1,1,1,-0.0231340298891601,crypto_mining,High CPU (92.8%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+50.088954744508094,74.77838982198054,39,41.97222587818767,1,1,1,1,-0.0886797203012833,brute_force_login,39 failed logins during off-hours (1:00) -> possible brute-force login attempt,Medium
+32.59996751919047,27.7563043823313,18,19.620572314877503,4,2,1,1,-0.0115524945877618,brute_force_login,18 failed logins during off-hours (4:00) -> possible brute-force login attempt,Medium
+30.789109798584747,751.2655248935963,0,18.859189475248584,7,1,1,1,-0.0177365825820782,data_exfiltration,Abnormal outbound traffic (751 MB) with normal CPU -> possible data exfiltration,High
+21.02928121138968,27.413782991537506,21,12.735104278072958,3,3,1,1,-0.0550477548518554,brute_force_login,21 failed logins during off-hours (3:00) -> possible brute-force login attempt,Medium
+97.9035548454146,60.891912820255605,0,25.804894172187304,22,1,1,1,-0.0250954438921107,crypto_mining,High CPU (97.9%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+98.2069446865344,57.74244534389704,0,14.98620343286761,5,3,1,1,-0.0723336107599352,crypto_mining,High CPU (98.2%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+18.59318247052484,79.2941683099926,1,220.7902186951137,4,16,1,1,-0.1777484376641528,credential_stuffing,221 API calls/min from 16 unique IPs -> possible credential-stuffing / bot activity,High
+26.136878927326485,62.96877187627656,20,15.342528972593383,2,2,1,1,-0.0064192601355542,brute_force_login,20 failed logins during off-hours (2:00) -> possible brute-force login attempt,Medium
+34.97556564810705,853.4349986428946,0,41.482061986716616,17,1,1,1,-0.0130254937359595,data_exfiltration,Abnormal outbound traffic (853 MB) with normal CPU -> possible data exfiltration,High
+44.22095288935015,731.4880052019147,0,25.545500938673023,10,1,1,1,-0.0367836297173345,data_exfiltration,Abnormal outbound traffic (731 MB) with normal CPU -> possible data exfiltration,High
+91.98636197914811,37.87919856364944,1,10.432342877073976,3,1,1,1,-0.0585707949295282,crypto_mining,High CPU (92.0%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+43.01646884494489,527.0139261578818,0,43.656233260402026,10,1,1,1,-0.0013659647304502,data_exfiltration,Abnormal outbound traffic (527 MB) with normal CPU -> possible data exfiltration,High
+21.38672763782932,52.79139531313903,0,203.6178549349694,1,15,1,1,-0.156805295289851,credential_stuffing,204 API calls/min from 15 unique IPs -> possible credential-stuffing / bot activity,High
+19.24732926287935,67.59341417947218,28,19.56652052515348,2,1,1,1,-0.0636485682128775,brute_force_login,28 failed logins during off-hours (2:00) -> possible brute-force login attempt,Medium
+19.72915719194764,63.72758226077934,0,176.35085925040056,3,12,1,1,-0.1418970345729016,credential_stuffing,176 API calls/min from 12 unique IPs -> possible credential-stuffing / bot activity,High
+95.01518974150945,58.662754319108174,0,19.820583480676284,20,1,1,1,-0.0269762663039903,crypto_mining,High CPU (95.0%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+13.197581778477089,801.9483234444342,0,4.256335091916927,3,1,1,1,-0.0640458727314401,data_exfiltration,Abnormal outbound traffic (802 MB) with normal CPU -> possible data exfiltration,High
+26.080426226175888,66.36541863787215,0,234.2349743513969,5,17,1,1,-0.1550583052351518,credential_stuffing,234 API calls/min from 17 unique IPs -> possible credential-stuffing / bot activity,High
+44.4012868810352,103.32444091588648,16,45.44969238643792,1,1,1,1,-0.0419824699693053,brute_force_login,16 failed logins during off-hours (1:00) -> possible brute-force login attempt,Medium
+97.30345024273868,69.30420929174629,0,13.146823758252271,0,1,1,1,-0.0593703279115254,crypto_mining,High CPU (97.3%) with normal network activity -> possible crypto-mining or resource-hijacking process,High
+44.25013868379612,692.7154719966395,1,55.06161567720385,15,2,1,1,-0.0538348895478674,data_exfiltration,Abnormal outbound traffic (693 MB) with normal CPU -> possible data exfiltration,High

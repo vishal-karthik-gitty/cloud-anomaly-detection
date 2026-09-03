@@ -1,0 +1,47 @@
+services:
+  api:
+    build: .
+    container_name: anomaly-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    networks:
+      - anomaly-net
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: anomaly-prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - "9090:9090"
+    depends_on:
+      - api
+    restart: unless-stopped
+    networks:
+      - anomaly-net
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: anomaly-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_AUTH_ANONYMOUS_ENABLED=false
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - grafana-storage:/var/lib/grafana
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+    networks:
+      - anomaly-net
+
+networks:
+  anomaly-net:
+    driver: bridge
+
+volumes:
+  grafana-storage:

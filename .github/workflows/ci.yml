@@ -1,0 +1,108 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Test - Model & Dependencies
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Sanity-check the trained model loads and predicts
+        run: |
+          python -c "
+          import joblib
+          import pandas as pd
+
+          model = joblib.load('isolation_forest_model.pkl')
+
+          sample = pd.DataFrame([{
+              'cpu_utilization': 95.0,
+              'network_bytes_out': 50.0,
+              'failed_login_count': 0,
+              'api_calls_per_min': 20.0,
+              'login_hour': 3,
+              'unique_ips_per_user': 1,
+          }])
+
+          prediction = model.predict(sample)
+          assert prediction[0] == -1, 'Expected known high-CPU pattern to be flagged as anomalous'
+          print('Model sanity check passed: high-CPU pattern correctly flagged as anomalous.')
+          "
+
+      - name: Verify explainability layer imports and runs
+        run: |
+          python -c "
+          from explainability_layer import classify_anomaly
+          import pandas as pd
+
+          row = pd.Series({
+              'cpu_utilization': 97.0,
+              'network_bytes_out': 50.0,
+              'failed_login_count': 0,
+              'login_hour': 3,
+              'api_calls_per_min': 20.0,
+              'unique_ips_per_user': 1,
+          })
+          explanation, severity = classify_anomaly(row)
+          assert severity == 'High', f'Expected High severity, got {severity}'
+          print('Explainability layer check passed:', explanation)
+          "
+
+  build-docker:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t anomaly-detection-api:ci .
+
+      - name: Confirm image runs and responds to health check
+        run: |
+          docker run -d --name test-container -p 8000:8000 anomaly-detection-api:ci
+          sleep 5
+          curl --fail http://localhost:8000/health
+          docker stop test-container
+
+  terraform-validate:
+    name: Validate Terraform
+    runs-on: ubuntu-latest
+    needs: test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Format Check
+        working-directory: ./terraform
+        run: terraform fmt -check
+
+      - name: Terraform Init
+        working-directory: ./terraform
+        run: terraform init -backend=false
+
+      - name: Terraform Validate
+        working-directory: ./terraform
+        run: terraform validate

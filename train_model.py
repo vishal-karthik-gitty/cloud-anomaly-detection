@@ -62,9 +62,7 @@ model = IsolationForest(
 )
 model.fit(X_train)
 
-# -----------------------------
 # 4. Predict on test set
-# -----------------------------
 raw_preds = model.predict(X_test)          # sklearn outputs -1 (anomaly) / 1 (normal)
 y_pred = np.where(raw_preds == -1, 1, 0)   # convert to match our label convention (1=anomaly)
 
@@ -72,9 +70,8 @@ y_pred = np.where(raw_preds == -1, 1, 0)   # convert to match our label conventi
 # Useful later for ranking alerts by severity in the dashboard.
 anomaly_scores = model.decision_function(X_test)
 
-# -----------------------------
 # 5. Evaluate against ground truth (evaluation ONLY, never used in training)
-# -----------------------------
+
 print("=== Confusion Matrix ===")
 print("            Predicted Normal | Predicted Anomaly")
 cm = confusion_matrix(y_test, y_pred)
@@ -91,9 +88,8 @@ print(f"Precision: {precision:.3f}  (of flagged anomalies, how many were real)")
 print(f"Recall:    {recall:.3f}  (of real anomalies, how many were caught)")
 print(f"F1-score:  {f1:.3f}")
 
-# -----------------------------
 # 6. Save results for Phase 3 (explainability layer will consume this)
-# -----------------------------
+
 results_df = X_test.copy()
 results_df["true_label"] = y_test.values
 results_df["predicted_label"] = y_pred

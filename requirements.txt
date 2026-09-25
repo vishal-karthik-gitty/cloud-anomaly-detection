@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+prometheus_client
+scikit-learn
+pandas
+numpy
+joblib
+requests
+boto3
+paramiko

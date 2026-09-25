@@ -17,7 +17,7 @@ Features generated (per-minute granularity):
 import numpy as np
 import pandas as pd
 
-np.random.seed(42)  # reproducibility — always mention this in interviews
+np.random.seed(42)  # reproducibility 
 
 
 def generate_normal_traffic(n_samples: int) -> pd.DataFrame:
@@ -60,7 +60,7 @@ def generate_normal_traffic(n_samples: int) -> pd.DataFrame:
         "login_hour": login_hour,
         "unique_ips_per_user": unique_ips_per_user,
         "is_anomaly": 0,          # ground truth label (evaluation ONLY)
-        "anomaly_type": "normal", # for explainability layer testing later
+        "anomaly_type": "normal", 
     })
     return df
 
